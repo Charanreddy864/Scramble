@@ -1,0 +1,117 @@
+body{
+  background-color: #0b163d;
+  background-image: url("Images/Background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.title
+{
+  font-family: cursive;
+  font-size: 60px;
+  color:white;
+}
+h3
+{
+  font-size: 40px;
+  color: white;
+}
+.board
+{
+  border:10px solid white;
+  background-color:black;
+  height:360px;
+  width:360px;
+  display: inline-block;
+  flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+.piece
+{
+  border:1px solid;
+  height: 118px;
+  width: 118px;
+}
+.btn {
+  background: #fc936d;
+  background-image: -webkit-linear-gradient(top, #fc936d, #ff4000);
+  background-image: -moz-linear-gradient(top, #fc936d, #ff4000);
+  background-image: -ms-linear-gradient(top, #fc936d, #ff4000);
+  background-image: -o-linear-gradient(top, #fc936d, #ff4000);
+  background-image: linear-gradient(to bottom, #fc936d, #ff4000);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  text-shadow: 0px 1px 2px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fc936d;
+  background-image: -webkit-linear-gradient(top, #fc936d, #ff0303);
+  background-image: -moz-linear-gradient(top, #fc936d, #ff0303);
+  background-image: -ms-linear-gradient(top, #fc936d, #ff0303);
+  background-image: -o-linear-gradient(top, #fc936d, #ff0303);
+  background-image: linear-gradient(to bottom, #fc936d, #ff0303);
+  text-decoration: none;
+}
+.goal
+{
+  text-align: center;
+  color: white;
+  position: absolute;
+  right: 150px;
+}
+.popup
+{
+  width: 400px;
+  height:250px;
+  top:0%;
+  transform: translate(-50%,-50%)scale(0.1);
+  background-color: black;
+  opacity: 90%;
+  position: absolute;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  color:white;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  border: solid;
+  border-width: 2px;
+  border-color: orange;
+
+
+}
+.success
+{
+  font-size: 50px;
+  font-family: cursive;
+}
+.popped
+{
+  top:30%;
+  transform: scale(1);
+  visibility: visible;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+#restart
+{
+  margin-right: 30px;
+}
+#quit
+{
+  margin-left: 30px;
+}
